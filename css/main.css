@@ -1,0 +1,337 @@
+.swiper{
+	margin-top: 74px;
+	width: 375px;
+	height: 188px;
+	background-image: url(../img/swiper-2.jpg);
+	background-repeat: no-repeat;
+	background-size:auto 100%;
+	background-position: center;
+}
+.iconList{
+	width: 375px;
+	height: 160px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.iconItem{
+	width: 20%;
+	height: 80px;
+}
+.iconItem>img{
+	width: 100%;
+	height: 100%;
+}
+.poster{
+	width: 375px;
+	height: 104px;
+	display: flex;
+	margin-top: 8px;
+}
+.posterItem{
+	width: 125px;
+	height: 104px;
+}
+.posterItem>img{
+	width: 100%;
+	height: 100%;
+}
+/*banner*/
+.banner{
+	width: 375px;
+	height: 265px;
+	display: flex;
+	justify-content: space-between;/*往两边靠*/
+}
+.banner .lbanner{
+	background-image: url(../img/main-1.webp);
+	background-size: 100% 100%;
+}
+.banner .lbanner{
+	width:186px;
+	height: 265px;
+}
+.banner .rbanner{
+	width:186px;
+	height: 265px;
+	display: flex;
+	flex-direction: column;/*上下结构*/
+	justify-content: space-between;
+}
+.banner .rbanner .rtbanner{
+	width: 186px;
+	height: 131px;
+	background-image: url(../img/main-2.webp);
+	background-size: 100% 100%;
+}
+.banner .rbanner .rbbanner{
+	width: 186px;
+	height: 131px;
+	background-image: url(../img/main-3.webp);
+	background-size: 100% 100%;
+}
+/*中部广告*/
+.m-ad{
+	width: 375px;
+	height: 146px;
+	background-image: url(../img/m-ad.webp);
+	background-size: 100% 100%;
+	margin-top: 8px;
+}
+/*每日精选*/
+.dayUpdate{
+	width: 375px;
+	height: 229px;
+	background-image: url(../img/dayupdate.webp);
+	background-size: 100% 100%;
+	margin-top: 8px;
+}
+/*两列广告*/
+.adList{
+	width: 375px;
+	display: flex;
+	flex-wrap: wrap;/*让弹性盒元素在必要的时候拆行：*/
+	margin-top: 3px;
+	background: #fff;
+	padding: 0  2px;
+}
+.adList .adItem{
+	width: 50%;
+	height: 253px;
+	padding: 2px 4px;
+	display: flex;
+	flex-direction: column;/*下面的price...*/
+	align-items: center;/*居中*/
+}
+.adList .adItem img{
+	width: 100%;
+	height: auto;
+}
+.adList .adItem .title{
+	padding-top: 5px;
+	font-size: 14px;
+	color: rgb(0,0,0,.87);
+}
+.adList .adItem .brief{
+	font-size: 12px;
+	color: rgb(0,0,0,.54);
+}
+.adList .adItem .price{
+	font-size: 14px;
+	color: #ea625b;
+}
+.adList .adItem .price span{
+	font-size: 12px;
+	color: #ea625b;
+}
+.adList .adItem .price .old{
+	font-size: 12px;
+	color: rgba(0,0,0,.54);
+}
+.adList .adItem .buyBtn{
+	width: 105px;
+	height: 31px;
+	text-align: center;
+	line-height: 31px;
+	color: #fff;
+	background-color: #EA625B;
+	font-size: 12px;
+	border-radius: 3px;
+}
+.adList .ti, .ti{
+	width: 375px;
+	height: 52px;
+	color: rgba(0,0,0,.6);
+	font-size: 14.5px;
+	display: flex;
+	justify-content: center;/*水平居中*/
+	align-items: center;/*垂直居中*/
+	background-color: #fff;
+}
+/*电视区*/
+.tvPoster{
+	width: 375px;
+	height: 229px;
+	background-image: url(../img/l-ad.webp);
+	background-size: 100% 100%;
+	margin-top: 8px;
+}
+.adList.last{
+	border-bottom:1px solid #cecece;
+}
+/*电脑区*/
+.comPoster{
+	width: 375px;
+	height: 229px;
+	background-image: url(../img/com-ad.webp);
+	background-size: 100% 100%;
+	margin-top: 8px;
+}
+/*家电海报*/
+.homePoster{
+	width: 375px;
+	height: 229px;
+	background-image: url(../img/home-ad.webp);
+	background-size: 100% 100%;
+	margin-top: 8px;
+}
+.homeList{
+	width: 375px;
+	display: flex;
+	flex-wrap: wrap;/*让弹性盒元素在必要的时候拆行：*/
+	margin-top: 3px;
+	background: #fff;
+	padding: 2px  2px;
+}
+.homeList .hmItem{
+	width: 50%;
+	height: 264px;
+	display: flex;
+	flex-direction: column;/*下面的price...*/
+	align-items: left;/*居左*/
+	padding: 0 2px;
+}
+.homeList .hmItem img{
+	width: 100%;
+	height: auto;
+}
+.homeList .hmItem .info{
+	padding: 10px 15px 0 15px;
+}
+.homeList .hmItem .name{
+	color: rgba(0,0,0,.87);
+	white-space: nowrap;/*不换行*/
+	overflow: hidden;
+	text-overflow: ellipsis;/*与overflow搭配效果 ...*/
+}
+.homeList .hmItem .brief{
+	font-size: 15px;
+	font-size: 12px;
+	color: rgb(0,0,0,.54);
+}
+.homeList .hmItem .price{
+	font-size: 14px;
+	color: #ea625b;
+}
+.homeList .hmItem .price span{
+	font-size: 12px;
+	color: #ea625b;
+}
+.homeList .hmItem .price .old{
+	font-size: 12px;
+	color: rgba(0,0,0,.54);
+}
+.homeList.last{
+	border-bottom:1px solid #cecece;
+}
+/*分类区*/
+.deliver{
+	margin-top: 8px;
+	width: 375px;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.deliver .dlItem{
+	width: 186px;
+	height: 250px;
+	background: #fff;
+	justify-content: space-between;
+	margin-bottom: 2px;
+}
+.deliver .dlItem img{
+	width: 100%;
+	height: auto;
+}
+/*了解小米*/
+.more{
+	width: 375px;
+	height: 55px;
+	background-image: url(../img/more.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center;
+	background-color: rgb(255, 255, 255);
+	margin-bottom: 45px;
+}
+/*底部导航*/
+.footer{
+	width: 375px;
+	display: flex;
+	background-color: #fff;
+	box-shadow: 0 3px 14px 2px rgba(0,0,0,.12);
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 10000;
+	padding: 4px 2px;
+}
+.footer .fIcon{
+	width: 20%;
+	height: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footer .fIcon .img{
+	width: 20px;
+	height: 20px;
+	background-size: 100%;
+	margin: 2px 0 2px 0;
+}
+.footer .fIcon span{
+	height: 14px;
+	color: #999;
+	font-size: 12px;
+	line-height: 14px;
+}
+.footer .fIcon:nth-child(1) .img{
+	background-image: url(../img/icon-home.png);
+}
+.footer .fIcon:nth-child(2) .img{
+	background-image: url(../img/icon-category.png);
+}
+.footer .fIcon:nth-child(3) .img{
+	background-image: url(../img/icon-star.png);
+}
+.footer .fIcon:nth-child(4) .img{
+	background-image: url(../img/icon-cart.png);
+}
+.footer .fIcon:nth-child(5) .img{
+	background-image: url(../img/icon-user.png);
+}
+
+.footer .fIcon:nth-child(1):hover .img{
+	background-image: url(../img/icon-home-selected.png);
+}
+.footer .fIcon:nth-child(2):hover .img{
+	background-image: url(../img/icon-category-selected.png);
+}
+.footer .fIcon:nth-child(3):hover .img{
+	background-image: url(../img/icon-star-selected.png);
+}
+.footer .fIcon:nth-child(4):hover .img{
+	background-image: url(../img/icon-cart-selected.png);
+}
+
+.footer .fIcon:nth-child(5):hover .img{
+	background-image: url(../img/icon-user-selected.png);
+}
+
+.footer .fIcon:nth-child(1):hover span{
+	color: #ff6700!important;
+}
+.footer .fIcon:nth-child(2):hover span{
+	color: #ff6700!important;
+}
+.footer .fIcon:nth-child(3):hover span{
+	color: #ff6700!important;
+}
+.footer .fIcon:nth-child(4):hover span{
+	color: #ff6700!important;
+}
+
+.footer .fIcon:nth-child(5):hover span{
+	color: #ff6700!important;
+}
+

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!--设置浏览器窗口的分辨率为设计稿的分辨率-->
+		<meta name="viewport" content="width=375,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/header.css"0/>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<!-- .hearer>(.headerTop>(.logo+.search>(.icon+input)+.user))+(.headerNav>(a*6+span.downdrop)) -->
+		<div class="header">
+			<div class="headerTop">
+				<div class="logo"></div>
+				<div class="search">
+					<div class="icon"></div>
+					<input type="text" placeholder="搜索商品名称">
+				</div>
+				<div class="user"></div>
+			</div>
+			<div class="headerNav">
+				<a href="" class="active">推荐</a>
+				<a href="">手机</a>
+				<a href="">电视</a>
+				<a href="">笔记本</a>
+				<a href="">智能</a>
+				<a href="">家电</a>
+				<input type="checkbox" hidden="hidden" name="choose" id="choose" value="" />
+				<label for="choose" class="downdrop"></label>
+				<div class="downbox">
+					<div class="downboxMain">
+						<div class="downboxTop">
+							全部
+						</div>
+						<div class="downboxList">
+							<a href="" class="active">推荐</a>
+							<a href="">手机</a>
+							<a href="">智能</a>
+							<a href="">电视</a>
+							<a href="">家电</a>
+							<a href="">笔记本</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 轮播 -->
+		<div class="swiper"></div>
+		<!-- 图标列表 
+		     .iconList>(a.iconItem>img[src="img/body-$.webp"])*10-->
+		<div class="iconList">
+			<a href="" class="iconItem"><img src="img/body-1.png" alt=""></a>
+			<a href="" class="iconItem"><img src="img/body-2.webp" alt=""></a>
+			<a href="" class="iconItem"><img src="img/body-3.webp" alt=""></a>
+			<a href="" class="iconItem"><img src="img/body-4.webp" alt=""></a>
+			<a href="" class="iconItem"><img src="img/body-5.webp" alt=""></a>
+			<a href="" class="iconItem"><img src="img/body-6.webp" alt=""></a>
+			<a href="" class="iconItem"><img src="img/body-7.png" alt=""></a>
+			<a href="" class="iconItem"><img src="img/body-8.png" alt=""></a>
+			<a href="" class="iconItem"><img src="img/body-9.webp" alt=""></a>
+			<a href="" class="iconItem"><img src="img/body-10.png" alt=""></a>
+		</div>
+		<!-- 季度广告 -->
+		<div class="poster">
+			<a href="" class="posterItem"><img src="img/poster-1.webp" alt=""></a>
+			<a href="" class="posterItem"><img src="img/poster-2.webp" alt=""></a>
+			<a href="" class="posterItem"><img src="img/poster-3.gif" alt=""></a>
+		</div>
+		<!--日常广告
+		    .banner>(.lbanner+(.rbanner>(.rtbanner)+.rbbanner))-->
+		<div class="banner">
+			<div class="lbanner"></div>
+			<div class="rbanner">
+				<div class="rtbanner"></div>
+				<div class="rbbanner"></div>
+			</div>
+		</div>
+		<!-- 中部广告 -->
+		<div class="m-ad"></div>
+		<!-- 每日精选 -->
+		<div class="dayUpdate"></div>
+		<!-- 手机广告 
+		     .adList>(.adItem>(img[src="img/ad-$"]+.title+.brief+.price+.buyBtn))*4-->
+		<div class="adList">
+			<div class="adItem">
+				<img src="img/ad-1.jpg" alt="">
+				<div class="title">Redmi K30 4G</div>
+				<div class="brief">120Hz流速屏，全速热爱</div>
+				<div class="price">￥1299
+					<span>起</span>
+					<span class="price old">
+						<s>￥1699</s>
+					</span>
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+			<div class="adItem">
+				<img src="img/ad-2.jpg" alt="">
+				<div class="title">Redmi K30 5G</div>
+				<div class="brief">双模5G，120Hz流速屏</div>
+				<div class="price">￥1599
+					<span>起</span>
+					<span class="price old">
+						<s>￥2299</s>
+					</span>
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+			<div class="adItem">
+				<img src="img/ad-3.jpg" alt="">
+				<div class="title">Note 8 Pro</div>
+				<div class="brief">6400万全场景四摄</div>
+				<div class="price">￥1099
+					<span>起</span>
+					<span class="price old">
+						<s>￥1399</s>
+					</span>
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+			<div class="adItem">
+				<img src="img/ad-4.jpg" alt="">
+				<div class="title">Redmi Note 8</div>
+				<div class="brief">千元4800万四摄</div>
+				<div class="price">￥899
+					<span>起</span>
+					<span class="price old">
+						<s>￥999</s>
+					</span>
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+			<div class="ti">更多小米手机产品 &gt;</div>
+		</div>
+		<!--电视海报-->
+		<div class="tvPoster"></div>
+		<!-- 两列广告 
+		     .adList>(.adItem>(img[src="img/ad-$"]+.title+.brief+.price+.buyBtn))*4-->
+		<div class="adList last">
+			<div class="adItem">
+				<img src="img/tv-1.webp" alt="">
+				<div class="title">小米电视4A 65英寸</div>
+				<div class="brief">4K HDR，人工智能语音系统</div>
+				<div class="price">￥2777
+					<span class="price old">
+						<s>￥2999</s>
+					</span>
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+			<div class="adItem">
+				<img src="img/tv-2.jpg" alt="">
+				<div class="title">小米电视4X 43英寸</div>
+				<div class="brief">FHD全高清屏，人工智能语音</div>
+				<div class="price">￥1299
+					<span class="price old">
+						<s>￥1399</s>
+					</span>
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+			<div class="adItem">
+				<img src="img/tv-3.jpg" alt="">
+				<div class="title">小米电视4C 50英寸</div>
+				<div class="brief">4K HDR，钢琴烤漆</div>
+				<div class="price">￥1999
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+			<div class="adItem">
+				<img src="img/tv-4.jpg" alt="">
+				<div class="title">小米电视4C 55英寸</div>
+				<div class="brief">4K HDR，人工智能系统</div>
+				<div class="price">￥2099
+					<span class="price old">
+						<s>￥2299</s>
+					</span>
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+			<div class="adItem">
+				<img src="img/tv-5.jpg" alt="">
+				<div class="title">小米电视4A 32英寸</div>
+				<div class="brief">人工智能系统，高清液晶屏</div>
+				<div class="price">￥999
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+			<div class="adItem">
+				<img src="img/tv-6.png" alt="">
+				<div class="title">小米电视4A 50英寸</div>
+				<div class="brief">4K HDR，人工智能语音系统</div>
+				<div class="price">￥1999
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+		</div>
+		<div class="ti">更多小米电视产品 &gt;</div>
+		<!--电脑海报-->
+		<div class="comPoster"></div>
+		<!-- 两列广告 
+		     .adList>(.adItem>(img[src="img/ad-$"]+.title+.brief+.price+.buyBtn))*4-->
+		<div class="adList last">
+			<div class="adItem">
+				<img src="img/com-1.jpg" alt="">
+				<div class="title">RedmiBook 14 增强版</div>
+				<div class="brief">十代酷睿更强劲</div>
+				<div class="price">￥4499
+					<span>起</span>
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+			<div class="adItem">
+				<img src="img/com-2.jpg" alt="">
+				<div class="title">RedmiBook 14 </div>
+				<div class="brief">超轻薄全金属独显笔记本</div>
+				<div class="price">￥4599
+					<span class="price old">
+						<s>￥4999</s>
+					</span>
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+			<div class="adItem">
+				<img src="img/com-3.jpg" alt="">
+				<div class="title">Air 13.3" 2019款</div>
+				<div class="brief">新一代独立显卡</div>
+				<div class="price">￥4799
+					<span>起</span>
+					<span class="price old">
+						<s>￥5399</s>
+					</span>
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+			<div class="adItem">
+				<img src="img/com-4.jpg" alt="">
+				<div class="title">小米笔记本15.6" MX110 独显版</div>
+				<div class="brief">全面均衡的国民轻薄本</div>
+				<div class="price">￥3899
+					<span class="price old">
+						<s>￥4299</s>
+					</span>
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+			<div class="adItem">
+				<img src="img/com-5.webp" alt="">
+				<div class="title">小米游戏本</div>
+				<div class="brief">冷酷的性能怪兽</div>
+				<div class="price">￥7999
+					<span>起</span>
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+			<div class="adItem">
+				<img src="img/com-6.jpg" alt="">
+				<div class="title">Pro 15.6" GTX显卡</div>
+				<div class="brief">更强悍的专业笔记本</div>
+				<div class="price">￥6299
+					<span>起</span>
+				</div>
+				<div class="buyBtn">立即购买</div>
+			</div>
+		</div>
+		<div class="ti">更多小米笔记本产品 &gt;</div>
+		<!-- 家电海报 -->
+		<div class="homePoster"></div>
+		<div class="homeList last">
+			<div class="hmItem">
+				<img src="img/home-1.webp" alt="">
+				<div class="info">
+					<div class="name">变频 | 米家互联网空调 1.5匹</div>
+					<div class="brief">变频节能，高效制冷热</div>
+					<div class="price">￥2199
+						<span class="price old">
+							<s>￥2699</s>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="hmItem">
+				<img src="img/home-2.jpg" alt="">
+				<div class="info">
+					<div class="name">米家洗烘一体机Pro</div>
+					<div class="brief">智能洗烘，省心省力</div>
+					<div class="price">￥2899
+						<span class="price old">
+							<s>￥3299</s>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="hmItem">
+				<img src="img/home-3.webp" alt="">
+				<div class="info">
+					<div class="name">定频 | 米家空调 大1匹</div>
+					<div class="brief">出众静音，快速制冷热</div>
+					<div class="price">￥1499
+						<span class="price old">
+							<s>￥1799</s>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="hmItem">
+				<img src="img/home-4.jpg" alt="">
+				<div class="info">
+					<div class="name">米家互联网洗烘一体机10kg</div>
+					<div class="brief">烘干除菌率达99.9%</div>
+					<div class="price">￥1999
+						<span class="price old">
+							<s>￥2299</s>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="hmItem">
+				<img src="img/home-5.webp" alt="">
+				<div class="info">
+					<div class="name">自清洁 | 米家互联网空调 1.5匹</div>
+					<div class="brief">变频节能省电，自清洁</div>
+					<div class="price">￥2199
+						<span class="price old">
+							<s>￥2699</s>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="hmItem">
+				<img src="img/home-6.webp" alt="">
+				<div class="info">
+					<div class="name">Redmi全自动波轮洗衣机1A 8kg</div>
+					<div class="brief">一键操作，父母都爱用</div>
+					<div class="price">￥799
+						<span class="price old">
+							<s>￥899</s>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ti">更多米家家电产品 &gt;</div>
+		<div class="deliver">
+			<div class="dlItem">
+				<img src="img/dl-1.webp" alt="">
+			</div>
+			<div class="dlItem">
+				<img src="img/dl-2.webp" alt="">
+			</div>
+			<div class="dlItem">
+				<img src="img/dl-3.webp" alt="">
+			</div>
+			<div class="dlItem">
+				<img src="img/dl-4.webp" alt="">
+			</div>
+			<div class="dlItem">
+				<img src="img/dl-5.webp" alt="">
+			</div>
+			<div class="dlItem">
+				<img src="img/dl-6.webp" alt="">
+			</div>
+		</div>
+		<div class="more"></div>
+		<!--底部
+			.footer>(.fIcon>(img+span))*4-->
+		<div class="footer">
+			<div class="fIcon"><div class="img"></div><span>首页</span></div>
+			<div class="fIcon"><div class="img"></div><span>分类</span></div>
+			<div class="fIcon"><div class="img"></div><span>星球</span></div>
+			<div class="fIcon"><div class="img"></div><span>购物车</span></div>
+			<div class="fIcon"><div class="img"></div><span>我的</span></div>
+		</div>
+	</body>
+</html>

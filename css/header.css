@@ -1,0 +1,166 @@
+*{
+	margin: 0;
+	padding: 0;
+	/*盒子模型的设定*/
+	box-sizing: border-box;/*相当于IE标准 context-box相当于W3C标准*/
+}
+body{
+	background: rgb(245,245,245);
+	
+}
+.header{
+	width: 375px;
+	height: 74px;
+	background: #f2f2f2;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 0 2px 4px -1px rgba(0,0,0,.2);
+}
+.headerTop{
+	width: 375px;
+	height: 44px;
+	display: flex;
+	align-items: center;/*居中对齐弹性盒的各项 <div> 元素：*/
+	position: relative;
+	z-index: 100;
+	background: #f2f2f2;
+}
+.logo{
+	width: 50px;
+	height: 44px;
+	background-image: url(../img/mi-logo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 25px auto;
+}
+.user{
+	width: 50px;
+	height: 44px;
+	background-image: url(../img/icon-user.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+}
+.search{
+	flex: 1;/*让所有弹性盒模型对象的子元素都有相同的长度，且忽略它们内部的内容*/
+	height: 33px;
+	width: 340px;
+	border: 1px solid #e5e5e5;
+	display: flex;
+	background: #fff;
+	border-radius: 2px;
+}
+.search .icon{
+	width: 31px;
+	height: 31px;
+	background-image: url(../img/search-icon.png);
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: center;
+}
+.search input{
+	background: transparent;
+	border: none;
+	outline: none; 
+	font-size: 15px;
+}
+.search input::-webkit-input-placeholder{
+	color: rgba(0,0,0,.3);
+}
+.header .headerNav{
+	display: flex;
+	justify-content: space-around;/*在弹性盒对象的 <div> 元素中的各项周围留有空白*/
+	align-items:center;
+	flex: 1;
+}
+.header .headerNav .downdrop{
+	width: 20px;
+	height: 20px;
+	background-image: url(../img/icon-xiangxia.png);
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: center;
+	position: relative;
+	z-index: 100;
+	transition: transform .8s;
+}
+.header .headerNav>a{
+	text-decoration: none;
+	font-size:14px;/*0.26rem*52*/
+	color: rgb(116,116,116);
+	align-self: stretch;/*拉伸*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header .headerNav>a.active{
+	color: rgb(237,91,0);
+	border-bottom: 2px solid rgb(237,91,0);
+}
+/*下滑框*/
+.downbox{
+	width: 100%;
+	/* height: 100vh; *//*相对于视窗的高度*/
+	background: rgb(0,0,0,0.3);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	height: 0vh;
+	overflow: hidden;
+	transition: height .8s;
+}
+#choose:checked~.downbox{
+	height: 100vh;
+}
+#choose:checked~.downdrop{
+	transform: rotate(180deg);/*向下箭头旋转180度*/
+}
+.downbox .downboxMain{
+	position: absolute;
+	left: 0;
+	top: 44px;
+	width: 375px;
+	height: 130px;
+	background: #f2f2f2;
+	display: flex;
+	flex-direction: column;
+}
+.downbox .downboxMain .downboxTop{
+	height: 29px;
+	width: 375px;
+	font-size: 14.5px;
+	line-height: 29px;
+	display: flex;
+	align-items: flex-end;
+	color:#3c3c3c;
+	margin: 7.5px 0 7.5px 13px;
+}
+.downbox .downboxMain .downboxList{
+	flex: 1;
+	flex-wrap: wrap;/*让弹性盒元素在必要的时候拆行*/
+	display: flex;
+	margin-left: 11px;
+	align-items: space-evenly;
+}
+.downbox .downboxMain .downboxList a{
+	width: 80px;
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+	border: 1px solid #e5e5e5;
+	margin: 0 10.5px 10px 0;
+	font-size: 13px;
+	text-decoration: none;
+	border-radius: 4px;
+	color: #3c3c3c;
+	background-color: #fff;
+}
+.downbox .downboxMain .downboxList a.active{
+	background-color: #fde0d5;
+	border-color: #ff6700;
+	color: #ff6700;
+}
